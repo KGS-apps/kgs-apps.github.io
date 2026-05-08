@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Koggi Studio</title>
-<meta name="description" content="Koggi Studio builds language-learning apps for iOS. Currently shipping GrowKanji and GrowKorean.">
+<meta name="description" content="Koggi Studio — iOS apps. Currently shipping GrowKanji, GrowKorean, and Peka Counter.">
 <meta property="og:title" content="Koggi Studio">
 <meta property="og:description" content="Language-learning apps for iOS.">
 <meta property="og:type" content="website">
@@ -28,6 +28,8 @@
     --kanji-mark: #D7642A;
     --korean-tint: #FFE9F0;
     --korean-mark: #C13B6B;
+    --peka-tint: #E8EDF5;
+    --peka-mark: #3D4663;
     --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Pretendard", "Noto Sans KR", "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
     --gutter: clamp(20px, 4vw, 40px);
     --radius-icon: 22.5%;
@@ -52,6 +54,8 @@
       --kanji-mark: #FFA471;
       --korean-tint: #2A1620;
       --korean-mark: #FF7BA5;
+      --peka-tint: #1F2433;
+      --peka-mark: #A4B0CC;
     }
   }
 
@@ -205,6 +209,10 @@
     background: var(--korean-tint);
     color: var(--korean-mark);
   }
+  .app.peka .app-tag {
+    background: var(--peka-tint);
+    color: var(--peka-mark);
+  }
   .app-desc {
     font-size: 15px;
     color: var(--muted);
@@ -346,6 +354,24 @@
         <div class="app-links">
           <a class="btn btn-ghost" href="https://kgs-apps.github.io/growkorean-legal/privacy.html">Privacy</a>
           <a class="btn btn-ghost" href="https://kgs-apps.github.io/growkorean-legal/terms.html">Terms</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="app peka">
+      <div class="app-icon">
+        <img src="/assets/icons/peka-counter.png" alt="Peka Counter icon" width="176" height="176">
+      </div>
+      <div class="app-meta">
+        <h2 class="app-title">Peka Counter</h2>
+        <span class="app-tag">パチスロ専用カウンター・統計</span>
+        <p class="app-desc">ジャグラーのゲーム数・ボーナス・ぶどう・チェリーを記録、グラフで振り返る。</p>
+      </div>
+      <div class="app-cta">
+        <a class="btn btn-primary" href="https://apps.apple.com/app/id6758296111" target="_blank" rel="noopener">App Store</a>
+        <div class="app-links">
+          <a class="btn btn-ghost" href="https://kgs-apps.github.io/peka-counter-legal/privacy.html">Privacy</a>
+          <a class="btn btn-ghost" href="https://kgs-apps.github.io/peka-counter-legal/terms.html">Terms</a>
         </div>
       </div>
     </article>
