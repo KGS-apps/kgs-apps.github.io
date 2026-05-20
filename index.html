@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Koggi Studio</title>
-<meta name="description" content="Koggi Studio — iOS apps. Currently shipping GrowKanji, GrowKorean, and Peka Counter.">
+<meta name="description" content="Koggi Studio — iOS apps. Currently shipping GrowKanji, GrowKorean, Peka Counter, and RoutinePin.">
 <meta property="og:title" content="Koggi Studio">
 <meta property="og:description" content="Language-learning apps for iOS.">
 <meta property="og:type" content="website">
@@ -30,6 +30,8 @@
     --korean-mark: #C13B6B;
     --peka-tint: #E8EDF5;
     --peka-mark: #3D4663;
+    --routine-tint: #E4F1E4;
+    --routine-mark: #2F7C3A;
     --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Pretendard", "Noto Sans KR", "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
     --gutter: clamp(20px, 4vw, 40px);
     --radius-icon: 22.5%;
@@ -56,6 +58,8 @@
       --korean-mark: #FF7BA5;
       --peka-tint: #1F2433;
       --peka-mark: #A4B0CC;
+      --routine-tint: #142A18;
+      --routine-mark: #8FD49B;
     }
   }
 
@@ -212,6 +216,10 @@
   .app.peka .app-tag {
     background: var(--peka-tint);
     color: var(--peka-mark);
+  }
+  .app.routine .app-tag {
+    background: var(--routine-tint);
+    color: var(--routine-mark);
   }
   .app-desc {
     font-size: 15px;
@@ -372,6 +380,24 @@
         <div class="app-links">
           <a class="btn btn-ghost" href="https://kgs-apps.github.io/peka-counter-legal/privacy.html">Privacy</a>
           <a class="btn btn-ghost" href="https://kgs-apps.github.io/peka-counter-legal/terms.html">Terms</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="app routine">
+      <div class="app-icon">
+        <img src="/assets/icons/routinepin.png" alt="RoutinePin icon" width="176" height="176">
+      </div>
+      <div class="app-meta">
+        <h2 class="app-title">RoutinePin <span class="alt">トレピン</span></h2>
+        <span class="app-tag">筋トレ部位の記録</span>
+        <p class="app-desc">「前回どこやったっけ?」を 3 秒で。ウィジェットからワンタップで部位を記録。</p>
+      </div>
+      <div class="app-cta">
+        <a class="btn btn-soft" aria-disabled="true">Coming soon</a>
+        <div class="app-links">
+          <a class="btn btn-ghost" href="https://kgs-apps.github.io/routinepin-legal/privacy.html">Privacy</a>
+          <a class="btn btn-ghost" href="https://kgs-apps.github.io/routinepin-legal/terms.html">Terms</a>
         </div>
       </div>
     </article>
